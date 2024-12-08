@@ -1,0 +1,1 @@
+%KAFKA39_HOME%\bin\windows\kafka-console-producer.bat --topic kraft-demo --bootstrap-server localhost:9092

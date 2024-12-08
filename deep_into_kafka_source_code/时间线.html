@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时间线图</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: auto;
+            padding: 10px 0;
+        }
+        .timeline-event {
+            padding: 10px 20px;
+            background-color: white;
+            border-radius: 6px;
+            margin: 10px 0;
+            position: relative;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .timeline-event::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 20px;
+            height: 20px;
+            width: 20px;
+            background-color: #007bff;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+        p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="timeline">
+    <div class="timeline-event">
+        <h2>2000年代末 - 2010年代初</h2>
+        <p>LinkedIn使用自研和开源工具收集应用程序指标，存在轮询拉取指标的缺陷，导致时间间隔长、应用程序所有者无法管理指标。</p>
+        <p>用户活动跟踪系统使用XML格式的消息，但面临格式不一致、资源消耗大、修改协调复杂等问题。</p>
+    </div>
+
+    <div class="timeline-event">
+        <h2>2010年代初</h2>
+        <p>2010年：LinkedIn开发团队由Jay Kreps领导，着手创建新的消息系统。</p>
+        <p>目标：解耦生产者和消费者、实现消息持久化、高吞吐量、横向扩展。</p>
+    </div>
+
+    <div class="timeline-event">
+        <h2>2010年底</h2>
+        <p>Kafka作为开源项目在GitHub发布。</p>
+    </div>
+
+    <div class="timeline-event">
+        <h2>2011年7月</h2>
+        <p>成为Apache软件基金会的孵化器项目。</p>
+    </div>
+
+    <div class="timeline-event">
+        <h2>2012年10月</h2>
+        <p>Kafka“毕业”，获得LinkedIn的支持，吸引外部贡献者。</p>
+    </div>
+
+    <div class="timeline-event">
+        <h2>2014年秋</h2>
+        <p>Jay Kreps、Neha Narkhede和Jun Rao离开LinkedIn，成立Confluent公司。</p>
+        <p>主要从事Kafka相关开发、支持和培训。</p>
+    </div>
+
+    <div class="timeline-event">
+        <h2>2016年</h2>
+        <p>Kafka峰会首次举办，每年在美国和英国举行，分享Kafka及相关项目的知识。</p>
+    </div>
+
+    <div class="timeline-event">
+        <h2>2020年</h2>
+        <p>Kafka的消息处理量超过7万亿条，每天处理超过5000万亿字节的数据。</p>
+        <p>广泛应用于Netflix、Uber等公司的数据管道，形成健康的生态环境。</p>
+    </div>
+</div>
+
+</body>
+</html>

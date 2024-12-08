@@ -1,0 +1,1 @@
+%KAFKA39_HOME%\bin\windows\kafka-server-start.bat %KAFKA39_HOME%\config\kraft\server.properties
