@@ -5,12 +5,15 @@
   <groupId>com.zhouzhou</groupId>
   <artifactId>kafka-source101</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
 
   <name>kafka-source101</name>
   <url>http://maven.apache.org</url>
+    <modules>
+        <module>kafka_storage_internals</module>
+    </modules>
 
-  <properties>
+    <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
