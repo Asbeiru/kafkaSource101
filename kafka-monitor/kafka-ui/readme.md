@@ -4,6 +4,8 @@
 [启动命令](https://docs.kafka-ui.provectus.io/development/building/prerequisites)
 - **CMD 启动命令行**
 ```shell
+cd D:\soft\kafka-ui
+
 java -Dspring.config.additional-location=application-local.yml --add-opens java.rmi/javax.rmi.ssl=ALL-UNNAMED -jar kafka-ui-api-v0.7.2.jar
 
 Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts

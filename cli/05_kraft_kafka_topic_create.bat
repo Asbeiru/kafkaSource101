@@ -1,1 +1,1 @@
-%KAFKA37_HOME%\bin\windows\kafka-topics.bat --create --topic kraft-demo --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+%KAFKA37_HOME%\bin\windows\kafka-topics.bat --create --topic word-count-input --bootstrap-server localhost:9092 --partitions 1 --replication-factor 2
